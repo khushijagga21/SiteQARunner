@@ -216,6 +216,7 @@ def random_hover_and_click_middle(driver, logger=None):
                .click()\
                .perform()
         if logger: logger(f"Middle click performed (jitter {jitter_x},{jitter_y})")
+        
         time.sleep(random.uniform(0.4, 1.1))
         return True
     except Exception as e:
@@ -762,3 +763,4 @@ if __name__ == "__main__":
     # First time: pip install undetected-chromedriver==3.5.5 selenium
     app = SiteQARunnerApp()
     app.mainloop()
+    
